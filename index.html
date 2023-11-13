@@ -13,7 +13,8 @@
         function invokeApi() {
             const urlParams = new URLSearchParams(window.location.search);
             const state = urlParams.get('state');
-            const apiEndpoint = 'https://login.yelldev.co.uk/continue';
+            //const apiEndpoint = 'https://login.yelldev.co.uk/continue';
+            const apiEndpoint = 'https://login.yellqatest.com/continue';
             const apiUrl = `${apiEndpoint}?state=${state}`;
 
             fetch(apiUrl)
